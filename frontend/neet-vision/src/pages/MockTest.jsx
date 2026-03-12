@@ -57,7 +57,7 @@ export default function MockTest() {
     const timeTaken = Math.floor((Date.now() - startTimeRef.current) / 1000);
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.post("http://localhost:5000/api/mocktest/submit",
+      const { data } = await axios.post("https://neet-visual-learning.onrender.com/api/mocktest/submit",
         { answers, timeTaken },
         { headers: { Authorization: `Bearer ${token}` } }
       );
