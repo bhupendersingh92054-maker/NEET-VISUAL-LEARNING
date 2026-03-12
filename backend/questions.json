@@ -1,0 +1,23 @@
+[
+{
+"subject":"physics",
+"question":"Unit of Force?",
+"options":["Newton","Joule","Pascal","Watt"],
+"correct":0,
+"explanation":"Force ka SI unit Newton hota hai."
+},
+{
+"subject":"physics",
+"question":"Speed of light?",
+"options":["3×10^8","5×10^8","1×10^6","9×10^5"],
+"correct":0,
+"explanation":"Light speed = 3×10^8 m/s."
+},
+{
+"subject":"biology",
+"question":"Human heart me kitne chambers hote hain?",
+"options":["2","3","4","5"],
+"correct":2,
+"explanation":"Human heart me 4 chambers hote hain."
+}
+]
