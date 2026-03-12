@@ -37,7 +37,7 @@ export default function MockTest() {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.get("http://localhost:5000/api/mocktest/questions", {
+      const { data } = await axios.get("https://neet-visual-learning.onrender.com/api/mocktest/questions", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setSections(data.sections);

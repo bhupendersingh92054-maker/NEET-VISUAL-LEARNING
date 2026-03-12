@@ -27,7 +27,7 @@ function Practice() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/questions/${subject}`);
+        const res = await axios.get(`https://neet-visual-learning.onrender.com/questions/${subject}`);
         setQuestions(res.data);
         setLoading(false);
         setTimeout(() => setLoaded(true), 100);

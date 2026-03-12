@@ -33,7 +33,7 @@ function Dashboard() {
       try {
         const token = localStorage.getItem("token");
         if (!token) { navigate("/"); return; }
-        const res = await axios.get("http://localhost:5000/api/dashboard", { headers: { Authorization: `Bearer ${token}` } });
+        const res = await axios.get("https://neet-visual-learning.onrender.com/api/dashboard", { headers: { Authorization: `Bearer ${token}` } });
         setUser(res.data.user || "");
         setStats(res.data.stats || { questions: 0, tests: 0, accuracy: 0, streak: 0 });
         setTimeout(() => setLoaded(true), 100);

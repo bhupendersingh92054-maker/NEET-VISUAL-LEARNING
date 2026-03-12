@@ -39,7 +39,7 @@ export default function AIDoubtSolver() {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.post("http://localhost:5000/api/ai/solve-doubt",
+      const { data } = await axios.post("https://neet-visual-learning.onrender.com/api/ai/solve-doubt",
         { question: q, subject: subject === "General" ? "" : subject, language },
         { headers: { Authorization: `Bearer ${token}` } }
       );

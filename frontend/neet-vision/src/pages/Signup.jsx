@@ -32,7 +32,7 @@ function Signup() {
     setError("");
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/api/users/register", { name, email, password });
+      await axios.post("https://neet-visual-learning.onrender.com/api/users/register", { name, email, password });
       setSuccess(true);
       setTimeout(() => navigate("/login"), 2000);
     } catch (err) {
